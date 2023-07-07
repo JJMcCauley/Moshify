@@ -3,6 +3,8 @@ $color-secondary: #00d9ff;
 $color-accent: #ff3400;
 $color-heading: #1b0760;
 $color-body: #918ca4;
+$color-border: #ccc;
+$border-radius: 30px;
 
 *,
 *::after,
@@ -168,9 +170,10 @@ a {
 
 .icon-container {
   align-items: center;
-  background: gold;
+  background: lighten($color-secondary, 45%);
   border-radius: 50%;
   display: inline-flex;
+  fill: $color-primary;
   height: 64px;
   justify-content: center;
   width: 64px;
@@ -250,8 +253,8 @@ a {
 
 // Inputs
 .input {
-  border-radius: 30px;
-  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  border: 1px solid $color-border;
   color: $color-heading;
   font-size: 2rem;
   outline: 0;
@@ -260,6 +263,22 @@ a {
 
 ::placeholder {
   color: #cdcdb7;
+}
+
+.input-group {
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
