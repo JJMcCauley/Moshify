@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-body {
-  margin: 2rem;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -159,7 +155,6 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  fill: #2584ff;
   height: 64px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -372,4 +367,21 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
 }

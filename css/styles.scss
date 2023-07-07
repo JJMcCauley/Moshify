@@ -12,10 +12,6 @@ $border-radius: 30px;
   box-sizing: border-box;
 }
 
-body {
-  margin: 2rem;
-}
-
 // Typography
 html {
   font-size: 62.5%;
@@ -174,7 +170,6 @@ a {
   background: lighten($color-secondary, 45%);
   border-radius: 50%;
   display: inline-flex;
-  fill: $color-primary;
   height: 64px;
   justify-content: center;
   width: 64px;
@@ -373,4 +368,21 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+
+// Media
+.media {
+  display: flex;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
 }
