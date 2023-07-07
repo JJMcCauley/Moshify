@@ -14,8 +14,7 @@ body {
   margin: 2rem;
 }
 
-/* Typography */
-
+// Typography
 html {
   font-size: 62.5%;
 }
@@ -68,7 +67,7 @@ p {
   }
 }
 
-/* Links */
+// Links
 a {
   text-decoration: none;
 }
@@ -96,8 +95,7 @@ a {
   }
 }
 
-/* Badges */
-
+// Badges
 .badge {
   border-radius: 20px;
   font-size: 2rem;
@@ -130,8 +128,7 @@ a {
   }
 }
 
-/* Lists */
-
+// Lists
 .list {
   color: $color-heading;
   list-style: none;
@@ -159,8 +156,7 @@ a {
   }
 }
 
-/* Icons */
-
+// Icons
 .icon {
   height: 40px;
   width: 40px;
@@ -180,8 +176,7 @@ a {
   width: 64px;
 }
 
-/* Buttons */
-
+// Buttons
 .btn {
   border-radius: 40px;
   border: 0;
@@ -253,4 +248,22 @@ a {
   }
 }
 
-//  Input
+// Inputs
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: $color-heading;
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcdb7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
