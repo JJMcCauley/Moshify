@@ -26,7 +26,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a href="/"><img src="./images/logo.svg" alt="" /></a>
+        <a class="nav__brand" aria-label="Moshify logo" href="/"
+          ><img src="./images/logo.svg" alt=""
+        /></a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="./images/sprite.svg#menu"></use>
         </svg>
@@ -76,6 +78,7 @@
             name="domain"
             placeholder="Enter domain name here..."
             id="domain"
+            aria-label="domain"
           />
           <button class="btn btn--accent">
             <svg class="icon icon--white">
